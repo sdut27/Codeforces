@@ -1,5 +1,12 @@
 //Sohom Dutta, Codeforces Educational Round 160 B
 import java.util.*;
+class Ben{
+    public int dover, ben;
+    public Ben(int d, int b){
+        dover = d;
+        ben = b;
+    }
+}
 public class formingtriangles {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
@@ -46,6 +53,15 @@ public class formingtriangles {
 
             }
             System.out.println(count);
+
+            Ben [] dovers = new Ben[n];
+            Arrays.sort(dovers, new Comparator<Ben>() {
+                @Override
+                public int compare(Ben o1, Ben o2) {
+                    return 0;
+                }
+            });
+
 
         }
     }
